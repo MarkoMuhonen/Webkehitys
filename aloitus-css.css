@@ -1,27 +1,73 @@
 /* elementtiin liittyvä tyyli */
+body {
+    background-color: rgb(37, 189, 37);
+    width: 80vw;
+}
 
+h1 {        
+    color: rgba(0, 0, 0,0.2); /* 4:s parametri rgba on läpinäkyvyys */
+    background-color: aquamarine;
+}
 
+/* Useampi elementti saa saman tyylin */
+h1, h2, h3 {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+} 
 
+/* ox, % yms kirjoitetaan suoraan luvun perään */
+p {
+    color: rgb(75, 61, 61);
+    font-size: 18px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* class selektori */
+.esittely {
+    color: rgb(141, 67, 18);
+    font-size: 1.3rem; /* 1.3 kertaa oletusfontin koko */
+    font-style: italic;
+}
 
 .tuote {
-    background-color: white;
+    background-color: #fff;     /* väri voidaan syöttää myös heksana */
     padding: 10px;
 }
 
+/* Kaikki yhteystiedot luokan p-elementit */
+.yhteystiedot p {
+    color: darkblue;
+}
+
+.yhteystiedot h2 {
+    color: red;
+}
+
+/*
+#tiedot {
+    color: brown;
+}
+*/
+
 /* id selektori */
+#tarjous {
+    background-color: gold;
+    font-weight: bold;
+}
+
+/* jos href alkaa https ^ jos loppuu $ */
+a[href^="https"] {
+    color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
