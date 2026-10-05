@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Web-blogi</title>
 
@@ -12,16 +11,21 @@
 </head>
 
 <body>
-<!--Tästä tulee koko sivun container: header, nav, main,aside, footer-->
+  <!--Tästä tulee koko sivun container: header, nav, main,aside, footer-->
   <div class="container">
 
     <!--Header-->
     <header class="header">
-      <h1>Web-blogi</h1>
-      <p>Ajankohtaista HTML:stä ja CSS:stä</p>
+      <div>
+        <h1>Web-blogi</h1>
+        <p>Ajankohtaista HTML:stä ja CSS:stä</p>
+      </div>
+      <div class="header-info">
+        Web-kehittämisen perusteet
+      </div>
     </header>
 
-<!--Erillinen navigaatioheadern alla-->
+    <!--Erillinen navigaatioheadern alla-->
     <nav class="nav">
       <ul>
         <li><a href="#">Etusivu</a></li>
@@ -31,14 +35,14 @@
       </ul>
     </nav>
 
-<!--main, tähän ei kuulu header, aside tai footer-->
+    <!--main, tähän ei kuulu header, aside tai footer-->
     <main class="main">
       <h2>Uusimmat artikkelit</h2>
 
       <!--Artikkelien container, automaattisesti rivittyvä-->
       <div class="article-grid">
-<!--Yksittäisten korttien asetukset-->
-        <article class="card" >
+        <!--Yksittäisten korttien asetukset-->
+        <article class="card">
           <h3>CSS Gridin perusteet</h3>
 
           <p>
@@ -49,7 +53,7 @@
           <a href="#">Lue artikkeli</a>
         </article>
 
-        <article class="card" >
+        <article class="card">
           <h3>Miksi semanttinen HTML kannattaa?</h3>
 
           <p>
@@ -85,7 +89,7 @@
       </div>
 
     </main>
-<!--Sivupalkki alkaa tästä-->
+    <!--Sivupalkki alkaa tästä-->
     <aside class="sidebar">
 
       <h2>Kategoriat</h2>
@@ -99,7 +103,7 @@
       </ul>
 
     </aside>
-<!--Footer -->
+    <!--Footer -->
     <footer class="footer">
       <p>&copy; 2026 Web-blogi</p>
     </footer>
