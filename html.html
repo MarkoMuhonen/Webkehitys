@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Web-blogi</title>
+
+  <link rel="stylesheet" href="css/gridi-blogi.css">
+</head>
+
+<body>
+  <!--Tästä tulee koko sivun container: header, nav, main,aside, footer-->
+  <div class="container">
+
+    <!--Header-->
+    <header class="header">
+      <div>
+        <h1>Web-blogi</h1>
+        <p>Ajankohtaista HTML:stä ja CSS:stä</p>
+      </div>
+      <div class="header-info">
+        Web-kehittämisen perusteet
+      </div>
+    </header>
+
+    <!--Erillinen navigaatioheadern alla-->
+    <nav class="nav">
+      <ul>
+        <li><a href="gridi-blogi.html">Etusivu</a></li>
+        <li><a href="#" class="" active">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Grid</a></li>
+      </ul>
+    </nav>
+
+    <!--main, tähän ei kuulu header, aside tai footer-->
+    <main class="main">
+      <!-- Tästä alkaa tämän sivun oma sisältö -->
+      <h2>HTML</h2>
+      <article class="blogi-article">
+        <h3>Mitä HTML tekee</h3>
+        <p>HTML määrittelee verkkosivun sisällön ja rakenteen.
+          CSS määrittää sivun ulkoasun.
+        </p>
+        <h3>Semanttisia elementtejä</h3>
+        <ul>
+          <li>header</li>
+          <li>nav</li>
+          <li>main</li>
+          <li>section...</li>
+        </ul>
+      </article>
+
+      <!-- kuva + teksti layout -->
+
+      <!-- Lohko 1 -->
+      <div class="kuva-teksti">
+        <h2>Kuva + teksti gridillä</h2>
+        <div class="kuva-teksti-rivi">
+          <img src="kuvat/koira2.jpg" alt="HTML rakennetta kuvaava kuva">
+          <div class="teksti">
+            <h3>HTML rakentaa sivun HTML-rakenteen</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nobis totam nisi debitis, ipsam
+              sapiente magni, adipisci numquam fuga repellendus exercitationem, cumque nam tempora vitae quis ex
+              corporis ullam in.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Lohko 2 -->
+      <div class="kuva-teksti">
+        <h2>Teksti + kuva gridillä</h2>
+        <div class="kuva-teksti-rivi">
+
+          <div class="teksti">
+            <h3>HTML rakentaa sivun HTML-rakenteen</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nobis totam nisi debitis, ipsam
+              sapiente
+              magni, adipisci numquam fuga repellendus exercitationem, cumque nam tempora vitae quis ex corporis ullam
+              in.
+            </p>
+          </div>
+          <img src="kuvat/koira2.jpg" alt="HTML rakennetta kuvaava kuva">
+        </div>
+
+
+
+
+
+      </div>
+
+    </main>
+    <!--Sivupalkki alkaa tästä-->
+    <aside class="sidebar">
+
+      <h2>Kategoriat</h2>
+
+      <ul>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Grid</a></li>
+        <li><a href="#">Flexbox</a></li>
+        <li><a href="#">Saavutettavuus</a></li>
+      </ul>
+
+    </aside>
+    <!--Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 Web-blogi</p>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
