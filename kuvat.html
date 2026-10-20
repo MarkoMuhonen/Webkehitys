@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuvat, äänet ja videot</title>
+    <link rel="stylesheet" href="css/kuvat.css">
+    <link rel="icon" href="kuvat/icon.svg" type="image/svg+xml">
+    <!-- type="image/png" type="image/x-icon" tämä esim. favicon.ico -->
+</head>
+
+<body>
+    <section class="hero">
+        <picture class="hero-picture">
+            <source type="image/avif" srcset="kuvat/maisema-1280x905.avif 1280w,
+                    kuvat/maisema-1920x1358.avif 1920w" sizes="100vw">
+
+            <source type="image/webp" srcset="kuvat/maisema-1280x905.webp 1280w,
+                    kuvat/maisema-1920x1358.webp 1920w" sizes="100vw">
+
+            <!-- Varavaihtoehto, jos edelliset ei toimi selaimessa-->
+                    <img src="maisema-1280x905.jxl" alt="Piirretty maisema, jossa puu ja talo" width="1920" height="905"
+                    fetchpriority="high">  <!-- oikeasti pitäisi olla .jpg tms yleinen tiedosto -->
+
+        </picture>
+    </section>
+    <section>
+        <div>
+            <figure><img src="kuvat/koira1.jpg" alt="Koira kuvassa" width="640" height="430"
+            fetchpriority="lazy"><figcaption>Koira pönöttää</figcaption></figure>
+        </div>
+    </section>
+    <section>
+       <video controls="metadata" poster="kuvat/koira2.jpg" width="640" height="480"
+        autoplay loop>
+        <source src="kuvat/video.mp4"
+    </video> 
+    </section>
+    <audio controls preload="none">
+        <source src="audio/music.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
