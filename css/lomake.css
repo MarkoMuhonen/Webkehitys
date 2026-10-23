@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body {
+margin:0;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.5;
+background-color: rgb(177,247,247);
+color: rgb(31,31,31);
+}
+.sisalto {
+    width: min(600px, calc(100% - 32px));
+    margin: 40px auto;
+}
+
+form {
+    background-color: white;
+    padding: 22px;
+    border: 1px solid rgb(66,65,65);
+    border-radius: 6px;
+}
+
+fieldset {
+    border: 1px solid rgb(66,65,65);
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.kentta {
+    margin-bottom: 12px;
+}
+
+.kentta:last-child {
+    margin-bottom: 0;
+}
+
+.kentta label {
+    display: block;
+}
+
+/* koskee kaikkia muita paitsi radio & checkbox */
+input:not([type="radio"], [type="checkbox"]), select, textarea {
+    display: block;
+    width: 100%;
+}
+
+/* Näytetään virheellinen kenttä punaisella borderilla */
+input:user-invalid, select:user-invalid, textarea:user-invalid {
+    border: 2px solid red;
+}
+
+.painikkeet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: 0;
+    border-radius: 10px;    
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+.tyhjenna {
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+}
+.tyhjenna:hover {
+    background-color: blue;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid blue;
+    padding: 5px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: aqua;
+}
+
+thead {
+    background-color: aquamarine;
+}
+tfoot {
+    background-color: lightblue;
+}
+

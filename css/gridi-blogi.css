@@ -76,9 +76,8 @@ body{
     padding: 15px 20px;
 }
 
-.nav a:hover, .nav {
-    background-color: 
-
+.nav a:hover {
+    background-color: rgb(32, 84, 115);
 }
 
 /*************************************************

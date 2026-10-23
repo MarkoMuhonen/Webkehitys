@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomake & taulukko</title>
+    <link rel="stylesheet" href="css/lomake.css">
+</head>
+
+<body>
+    <main class="sisalto">
+        <h1>Ilmoittautuminen koulutukseen</h1>
+        <p>Tähdellä (*) merkityt kentät ovat pakollisia</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Yhteystiedot</legend>
+                <div class="kentta">
+                    <label for="nimi">Koko nimi <span class="pakollinen">*</span></label>
+                    <input type="text" id="nimi" name="kokonimi" placeholder="Etunimi Sukunimi" autocomplete="name"
+                        maxlength="100" required>
+                </div>
+                <div class="kentta">
+                    <label for="sposti">Sähköposti <span class="pakollinen">*</span></label>
+                    <input type="email" id="sposti" name="sposti" placeholder="etunimi.sukunimi@domain.fi"
+                        autocomplete="email" maxlength="100" required>
+                </div>
+                <div class="kentta">
+                    <label for="puh">Puhelin</label>
+                    <input type="tel" id="puh" name="sposti" placeholder="+3581234567" autocomplete="tel">
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Koulutuksen valinta *</legend>
+                <label for="koulutus">Koulutus</label>
+                <select name="koulutus" id="koulutus">
+                    <option value="#">Valitse koulutus</option>
+                    <optgroup label="Web-kehittäminen">
+                        <option value="html">HTML</option>
+                        <option value="javascript">Javascript</option>
+                        <option value="css">CSS</option>
+                    </optgroup>
+                    <optgroup label="Ohjelmointi">
+                        <option value="java">JAVA</option>
+                        <option value="python">Python</option>
+                        <option value="c#">C#</option>
+                    </optgroup>
+                </select>
+
+                <div class="kentta">
+                    <label for="paiva">Valitse päivämäärä *</label>
+                    <input type="date" id="paiva" name="paiva" required>
+                </div>
+                <div class="kentta">
+                    <label for="maara">Valitse osallistujamäärä *</label>
+                    <input type="number" id="maara" name="maara" min="1" max="10" step="1" value="1" required>
+                </div>
+                <div class="valinta">
+                    <input type="radio" id="eta" name="opetusvalinta" value="eta" required>
+                    <label for="eta">Etäopetus</label>
+                </div>
+                <div class="valinta">
+                    <input type="radio" id="lahi" name="opetusvalinta" value="lahi" required>
+                    <label for="eta">Lähiopetus</label>
+                </div>
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Lisätietoja</legend>
+                <div class="kentta">
+                    <label for="viesti">Kirjoita lisätietoja</label>
+                    <textarea name="viesti" id="viesti" rows="4" placeholder="Kirjoita viestisi ..."></textarea>
+                </div>
+                <div class="valinta">
+                    <input type="checkbox" id="uutiskirje" name="uutiskirje" value="kylla">
+                    <label for="uutiskirje">Haluan tilata uutiskirjeen</label>
+                </div>
+                <div class="ehdot">
+                    <input type="checkbox" id="ehdot" name="ehdot" value="hyvaksytty" required>
+                    <label for="uutiskirje">Olen tutustunut ehtoihin *</label>
+                </div>
+            </fieldset>
+            <div class="painikkeet">
+                <button type="submit">Lähetä</button>
+                <button type="reset" class="tyhjenna">Tyhjennä</button>
+
+            </div>
+            <section>
+                <h2>Taulukko-osio</h2>
+                <table>
+                    <caption>
+                    <thead>
+                        <tr>
+                            <th>Koulutus</th>
+                            <th>Paikkoja</th>
+                            <th>Hinta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>HTML</th>
+                            <td>12</td>
+                            <td>99</td>
+                        </tr>
+                        <tr>
+                            <th>CSS</th>
+                            <td>20</td>
+                            <td>199</td>
+                        </tr>
+                        <tr>
+                            <th>Python</th>
+                            <td>20</td>
+                            <td>179</td>
+                        </tr>
+                        <tr>
+                            <th>Python</th>
+                            <td>20</td>
+                            <td>179</td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Yhteensä</th>
+                            <td>52</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Ilmoittautuminen päättyy ensimmäinen 1.12.2026</td>
+                        </tr>
+                    </tfoot>
+
+
+
+                    </caption>
+                </table>
+
+            </section>
+
+
+
+
+        </form>
+
+    </main>
+</body>
+
+</html>
