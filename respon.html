@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuontoPolku  - retkelle lähelle</title>
+  <link rel="stylesheet" href="css/respon.css">
+</head>
+<body>
+  <header class="header">
+    <!--header-sisalto käyttää flexia-->
+    <div class="rajaus header-sisalto">
+        <!--logo-luokka muotoilee logon tekstin-->
+      <a class="logo" href="index.html">LuontoPolku</a>
+      <!-- Tähän tulee hampurilaisvalikko -->
+      <input type="checkbox" id="valikko-auki" class="valikko-checkbox">
+      <label for="valikko-auki" class="hampurilainen">
+        <span>&#9776</span>
+      </label>
+
+
+      
+      <nav class="paavalikko" id="paavalikko">
+        <a href="#retket">Retket</a>
+        <a href="#yhteystiedot">Yhteystiedot</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Tehdään hero-kuva taustakuvana =>yksinkertaisempi -->
+    <section class="hero">
+      <div class="hero-sisalto rajaus">
+        <h1 id="paaotsikko">Retkelle lähelle</h1>
+        <p>Pieni irtiotto arjesta alkaa lähiluonnosta. Valitse sopiva reitti ja lähde nauttimaan ulkoilmasta.</p>
+        <a class="painikelinkki" href="#retket">Tutustu retkiin</a>
+      </div>
+    </section>
+
+    <!-- Kortit: leveällä näytöllä kolme saraketta. 
+        retket lisää vähän panningia ylös ja alas
+        rajauskorttialueen leveyden rajaus max 1100px tai 90%-->
+    <section class="retket rajaus" id="retket">
+      <h2 id="retkiotsikko">Valitse oma retkesi</h2>
+      <!--Muodostaa containerin kaikille korteille, käytetään gridiä-->
+      <div class="kortit">
+        <!--Ykjsittäisen kortin asetuksia: reunukset yms-->
+        <article class="kortti">
+          <h3>Metsäpolku</h3>
+          <p>Rauhallinen kävely havumetsän suojassa sopii kiireettömään iltapäivään.</p>
+          <ul class="tiedot">
+            <li>Pituus 3 km</li>
+            <li>Kesto noin 1 tunti</li>
+            <li>Helppo reitti</li>
+          </ul>
+          <!--korttilinkki vain muotoilee linkkiä (lihavoi)-->
+          <a class="korttilinkki" href="#yhteystiedot">Kysy Metsäpolusta</a>
+        </article>
+        <article class="kortti">
+          <h3>Järvikierros</h3>
+          <p>Rantapolku tarjoaa avaria maisemia ja mukavan paikan evästauolle.</p>
+          <ul class="tiedot">
+            <li>Pituus 5 km</li>
+            <li>Kesto noin 2 tuntia</li>
+            <li>Keskivaativa reitti</li>
+          </ul>
+          <a class="korttilinkki" href="#yhteystiedot">Kysy Järvikierroksesta</a>
+        </article>
+        <article class="kortti">
+          <h3>Kallioreitti</h3>
+          <p>Nouse kallion laelle katselemaan maisemia. Varaa mukaan tukevat kengät.</p>
+          <ul class="tiedot">
+            <li>Pituus 7 km</li>
+            <li>Kesto noin 3 tuntia</li>
+            <li>Vaativa reitti</li>
+          </ul>
+          <a class="korttilinkki" href="#yhteystiedot">Kysy Kallioreitistä</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="yhteystiedot">
+    <div class="rajaus">
+      <h2>Yhteystiedot</h2>
+      <p>Kysy lisää retkineuvonnasta: <a href="mailto:retket@example.com">retket@example.com</a></p>
+      <p>LuontoPolku on kuvitteellinen harjoitussivusto.</p>
+    </div>
+  </footer>
+</body>
+</html>
